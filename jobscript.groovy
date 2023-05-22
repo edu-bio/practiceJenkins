@@ -20,6 +20,5 @@ job('ejemplo2-job-DSL') {
   publishers {
     archiveArtifacts('build/test-output/**/*.html')
     archiveJunit('**/target/surefire-reports/*.xml')
-    chucknorris()
   }
 }
