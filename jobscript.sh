@@ -14,7 +14,7 @@ sleep 5
 echo "Bien. Hemos terminado con el curso de $curso. Enhorabuena $nombre."
 echo "Vamos a ver la película $pelicula"
 numero=2
-if ( $numero % 2 -eq 0 )
+if ( $numero % 2 == 0 )
 then
 	echo "$numero es par"
 else
