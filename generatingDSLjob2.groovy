@@ -1,7 +1,7 @@
 job('ejemplo2-job-DSL') {
   description('Job DSL de ejemplo para el curso de Jenkins')
   scm {
-    git('https://github.com/macloujulian/jenkins.job.parametrizado.git', 'main') { node ->
+    git('https://github.com/edu-bio/practiceJenkins.git', 'master') { node ->
       node / gitConfigName('edubio')
       node / gitConfigEmail('edubio@gmail.com')
     }
@@ -15,6 +15,6 @@ job('ejemplo2-job-DSL') {
     cron('H/45 * * * 1-6')
   }
   steps {
-    shell("bash jobscript.sh")
+    shell("bash generatingDSLjob2.sh")
   }
 }
