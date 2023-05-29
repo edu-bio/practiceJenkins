@@ -15,6 +15,6 @@ job('ejemplo2-job-DSL') {
     cron('H/45 * * * 1-6')
   }
   steps {
-    shell("bash generatingDSLjob2.sh")
+    shell("bash jobscript.sh")
   }
 }
