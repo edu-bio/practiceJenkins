@@ -17,8 +17,4 @@ job('ejemplo2-job-DSL') {
   steps {
     shell("bash jobscript.sh")
   }
-  publishers {
-    archiveArtifacts('build/test-output/**/*.html')
-    archiveJunit('**/target/surefire-reports/*.xml')
-  }
 }
