@@ -12,7 +12,7 @@ job('ejemplo2-job-DSL') {
     booleanParam( 'adulto', false)
   }
   triggers {
-    cron('H/45 * * * 1-6')
+    cron('H/45 * * * 1-5')
   }
   steps {
     shell("bash jobscript.sh")
