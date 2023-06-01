@@ -1,2 +1,2 @@
 Probando construcción automatica en Jenkins...
-forzarBuild:0
+forzarBuild:1
